@@ -159,6 +159,7 @@ img {
 @media (max-width: 768px) {
     body {
         padding: 2rem;
+        height: 100%;
     }
 
     .title-wrapper {
@@ -221,6 +222,7 @@ img {
 @media (max-width: 500px) {
     body {
         padding: 1.6rem;
+        height: 100%;
     }
     .content-middle-wrapper {
         flex-direction: column;
