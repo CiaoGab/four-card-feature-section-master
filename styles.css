@@ -1,0 +1,239 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-wrapper {
+    height: 15.8rem;
+    width: 54rem;
+    text-align: center;
+}
+.title {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.6rem;
+}
+.title h1 {
+    font-size: 3.6rem;
+    line-height: 140%;
+    letter-spacing: .025rem;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+.title h2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 3.6rem;
+    line-height: 140%;
+    letter-spacing: .025rem;
+    font-weight: 600;
+}
+.title p {
+    color: hsl(234, 12%, 34%);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 160%;
+    letter-spacing: 0rem;
+}
+
+.card-wrapper {
+    height: 53.2rem;
+    width: 111.4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3.2rem;
+    margin-top: 7.2rem;
+    padding: 0;
+}
+.card-wrapper p {
+    color: hsl(212, 6%, 44%);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0rem;
+    text-align: left;
+}
+ h3 {
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+    line-height: 135%;
+    letter-spacing: 0rem;
+    font-weight: 600;
+    text-align: left;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+   
+}
+
+.content-first {
+    border-top: .4rem solid hsl(180, 62%, 55%);
+    border-radius: .8rem;
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 0%, 100%);
+    text-align: left;
+    padding: 3.2rem;
+}
+img {
+    height: 6.4rem;
+    width: 6.4rem;
+    padding: 0rem;
+    margin-top: 3.2rem;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 3.2rem;
+    margin-left: auto;
+}
+
+.content-middle-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+}
+.content-middle-1 {
+    border-top: .4rem solid hsl(0, 78%, 62%);
+    padding: 3.2rem;
+    border-radius: .8rem;
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 0%, 100%);
+    text-align: left;
+    margin-bottom: 3.2rem;
+}
+
+.content-middle-2 {
+    border-top: .4rem solid hsl(34, 97%, 64%);
+    padding: 3.2rem;
+    border-radius: .8rem;
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 0%, 100%);
+    text-align: left;
+}
+.content-last {
+    border-top: .4rem solid hsl(212, 86%, 64%);
+    padding: 3.2rem;
+    border-radius: .8rem;
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 0%, 100%);
+    text-align: left;
+    
+}
+
+/* Tablet Media Query */
+@media (max-width: 1200px) {
+    .title-wrapper {
+        width: 90%;
+        max-width: 54rem;
+    }
+
+    .card-wrapper {
+        width: 90%;
+        max-width: 111.4rem;
+        grid-gap: 2.4rem;
+    }
+
+    .content-middle-wrapper {
+        gap: 2.4rem;
+    }
+}
+
+/* Mobile Media Query */
+@media (max-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+
+    .title-wrapper {
+        height: auto;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .title {
+        height: auto;
+        padding-bottom: 1.6rem;
+    }
+
+    .title h1, .title h2 {
+        font-size: 2.4rem;
+    }
+
+    .title p {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin-top: 4rem;
+        gap: 2.4rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 31.4rem;
+    }
+
+    .content-middle-wrapper {
+        width: 100%;
+        gap: 2.4rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content-middle-1 {
+        margin-bottom: 0;
+    }
+
+    .content-first, .content-middle-1, .content-middle-2, .content-last {
+        padding: 2.4rem;
+    }
+
+    img {
+        margin-top: 2.4rem;
+        margin-bottom: 0;
+    }
+}
+
+/* Small Mobile Media Query */
+@media (max-width: 500px) {
+    body {
+        padding: 1.6rem;
+    }
+    .content-middle-wrapper {
+        flex-direction: column;
+    }
+    .title h1, .title h2 {
+        font-size: 2rem;
+    }
+
+    .title p {
+        font-size: 1.4rem;
+    }
+
+    .card {
+        max-width: 28rem;
+    }
+}
